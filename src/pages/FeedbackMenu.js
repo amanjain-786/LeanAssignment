@@ -63,7 +63,7 @@ const FeedbackMenu = ({ setOpen, setMsg }) => {
             </div>
             <div className={choosen === false ? 'feedbackMenuColumn' : 'feedbackMenuRow'}>
                 <div className="option" onClick={() => handleFormType("issue")}>
-                    <button className={choosen == false ? "optionBtnOn" : "optionBtnOff"}>Report An Issue</button>
+                    <button className={choosen === false ? "optionBtnOn" : "optionBtnOff"}>Report An Issue</button>
                     <span className={issue ? "material-symbols-outlined currSelected" : "material-symbols-outlined"}>
                         flag
                     </span>
