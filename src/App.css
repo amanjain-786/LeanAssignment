@@ -1,0 +1,165 @@
+.App{
+  background-color: black;
+  height:100vh;
+  width:100vw;
+  padding:none;
+}
+
+
+
+.feedbackDiv{
+  position:absolute;
+  bottom:32px;
+  right:32px;
+  /* border:1px solid white; */
+  padding:10px;
+  /* background-color: #47474780; */
+  /* border-radius: 5px;
+  padding-bottom: 5px; */
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+
+
+
+.feedbackMenuRow{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.option{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap:10px;
+  margin-bottom: 10px;
+  width:100%;
+  justify-content: flex-end;
+}
+
+.option .optionBtnOn{
+  border:none;
+  border-radius: 5px;
+  padding:none;
+}
+
+.optionBtnOff{
+  display:none;
+}
+
+.material-symbols-outlined{
+  background-color: #F8F8F8;
+  padding:10px;
+  border-radius: 50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  cursor:pointer;
+}
+
+.currSelected{ 
+  outline: 3px solid gray;
+  outline-offset: 3px;
+}
+
+.cursorPointer{
+  cursor:pointer
+}
+
+.btn{
+  padding:0;
+  margin-top:10px;
+}
+
+
+
+.inputBox{
+  width:300px;
+  height:50vh;
+  background-color: white;
+  padding:10px;
+  border-radius: 5px;
+  overflow:auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  margin-bottom:15px;
+}
+
+.inputBox .heading{
+  text-align: center;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.803);
+  padding-bottom: 10px;
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.submitBtn{
+  align-self: flex-end;
+  border:none;
+  border-radius: 5px;
+  color:white;
+  background-color: rgb(63, 63, 63);
+  text-transform: lowercase;
+  padding-bottom:5px;
+  margin-top:10px;
+}
+.submitBtnDisabled{
+  align-self: flex-end;
+  border:none;
+  border-radius: 5px;
+  color:white;
+  background-color: rgb(63, 63, 63);
+  text-transform: lowercase;
+  padding-bottom:5px;
+  opacity: 0.6;
+  margin-top:10px;
+}
+
+
+
+
+
+
+.messageDiv{
+  background-color: white;
+  width:fit-content;
+  padding:10px;
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (width <= 350px) {
+  .feedbackDiv{
+    flex-direction: column-reverse;
+    width:100vw;
+    bottom:0;
+    right:0;
+    box-sizing: border-box;
+    margin:none;
+  }
+  .feedbackMenuRow{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width:90%;
+  }
+}
