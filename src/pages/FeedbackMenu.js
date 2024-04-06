@@ -13,28 +13,28 @@ const FeedbackMenu = ({ setOpen, setMsg }) => {
     const [choosen, setChoosen] = useState(false)
 
     const handleFormType = (t) => {
-        if (t == "issue") {
+        if (t === "issue") {
             setIssue(true);
             setFeedback(false);
             setSuggestion(false);
             setContact(false);
             setChoosen(true);
         }
-        else if (t == "feedback") {
+        else if (t === "feedback") {
             setIssue(false);
             setFeedback(true);
             setSuggestion(false);
             setContact(false);
             setChoosen(true);
         }
-        else if (t == "suggestion") {
+        else if (t === "suggestion") {
             setIssue(false);
             setFeedback(false);
             setSuggestion(true);
             setContact(false);
             setChoosen(true);
         }
-        else if (t == "contact") {
+        else if (t === "contact") {
             setIssue(false);
             setFeedback(false);
             setSuggestion(false);
