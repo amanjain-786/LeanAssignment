@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Issue from '../components/Issue.js'
 import Feedback from '../components/Feedback.js'
-import Suggestions from './../components/Suggestions';
-import Contact from './../components/Contact';
+import Suggestions from './../components/Suggestions.js';
+import Contact from './../components/Contact.js';
 
 const FeedbackMenu = ({ setOpen, setMsg }) => {
 
