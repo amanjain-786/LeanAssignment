@@ -61,7 +61,7 @@ const FeedbackMenu = ({ setOpen, setMsg }) => {
                     <Contact setOpen={setOpen} setMsg={setMsg} />
                 }
             </div>
-            <div className={choosen == false ? 'feedbackMenuColumn' : 'feedbackMenuRow'}>
+            <div className={choosen === false ? 'feedbackMenuColumn' : 'feedbackMenuRow'}>
                 <div className="option" onClick={() => handleFormType("issue")}>
                     <button className={choosen == false ? "optionBtnOn" : "optionBtnOff"}>Report An Issue</button>
                     <span className={issue ? "material-symbols-outlined currSelected" : "material-symbols-outlined"}>
@@ -69,19 +69,19 @@ const FeedbackMenu = ({ setOpen, setMsg }) => {
                     </span>
                 </div>
                 <div className="option" onClick={() => handleFormType("feedback")}>
-                    <button className={choosen == false ? "optionBtnOn" : "optionBtnOff"}>Share Feedback</button>
+                    <button className={choosen === false ? "optionBtnOn" : "optionBtnOff"}>Share Feedback</button>
                     <span className={feedback ? "material-symbols-outlined currSelected" : "material-symbols-outlined"}>
                         thumbs_up_down
                     </span>
                 </div>
                 <div className="option" onClick={() => handleFormType("suggestion")}>
-                    <button className={choosen == false ? "optionBtnOn" : "optionBtnOff"}>Give Suggestion</button>
+                    <button className={choosen === false ? "optionBtnOn" : "optionBtnOff"}>Give Suggestion</button>
                     <span className={suggestion ? "material-symbols-outlined currSelected" : "material-symbols-outlined"}>
                         edit_note
                     </span>
                 </div>
                 <div className="option" onClick={() => handleFormType("contact")}>
-                    <button className={choosen == false ? "optionBtnOn" : "optionBtnOff"}>Contact Us</button>
+                    <button className={choosen === false ? "optionBtnOn" : "optionBtnOff"}>Contact Us</button>
                     <span className={contact ? "material-symbols-outlined currSelected" : "material-symbols-outlined"}>
                         chat
                     </span>

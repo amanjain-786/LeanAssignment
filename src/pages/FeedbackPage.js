@@ -21,7 +21,7 @@ const FeedbackPage = () => {
                     </div>
                 }
                 {
-                    open == false ? (
+                    open === false ? (
                         <button className="openerBtn btn" onClick={(e) => setOpen(true)}>
                             <span className="material-symbols-outlined">
                                 rate_review
